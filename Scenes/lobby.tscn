@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://4p2t526tk7j5"]
+
+[ext_resource type="Script" path="res://Scripts/host_button.gd" id="1_1xsvo"]
+[ext_resource type="Script" path="res://Scripts/join_button.gd" id="1_o5drl"]
+[ext_resource type="Script" path="res://Scripts/network_manager.gd" id="2_02fnj"]
+[ext_resource type="Script" path="res://Scripts/start_button.gd" id="3_ktlav"]
+
+[node name="Lobby" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="host_button" type="Button" parent="CanvasLayer"]
+offset_left = 199.0
+offset_top = 97.0
+offset_right = 243.0
+offset_bottom = 128.0
+text = "Host
+"
+script = ExtResource("1_1xsvo")
+
+[node name="join_button" type="Button" parent="CanvasLayer"]
+offset_left = 605.0
+offset_top = 316.0
+offset_right = 642.0
+offset_bottom = 347.0
+text = "join
+"
+script = ExtResource("1_o5drl")
+
+[node name="start_button" type="Button" parent="CanvasLayer"]
+offset_left = 910.0
+offset_top = 89.0
+offset_right = 956.0
+offset_bottom = 120.0
+button_mask = 0
+text = "Start
+"
+script = ExtResource("3_ktlav")
+
+[node name="network_manager" type="Node" parent="."]
+script = ExtResource("2_02fnj")
+
+[connection signal="pressed" from="CanvasLayer/host_button" to="CanvasLayer/host_button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/join_button" to="CanvasLayer/join_button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/start_button" to="CanvasLayer/start_button" method="_on_pressed"]
