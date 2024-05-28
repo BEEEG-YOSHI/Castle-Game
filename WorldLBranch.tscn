@@ -1,4 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://di3n3icm4pa2"]
+[gd_scene load_steps=8 format=3 uid="uid://di3n3icm4pa2"]
+
+[ext_resource type="PackedScene" uid="uid://bv5qxe2a40mob" path="res://Assets/Models/Build/WallFrac.glb" id="1_kkgq8"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kknmk"]
 
@@ -107,3 +109,8 @@ mesh = SubResource("BoxMesh_l4xkg")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.858262, -0.00330517, 0.513201, -0.513212, -0.00552735, 0.858244, 0, -0.999979, -0.00644016, 157.123, 276.681, 0)
 light_energy = 0.8
+
+[node name="WallFrac" parent="." instance=ExtResource("1_kkgq8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.003, 0.25, 34.2896)
+
+[editable path="WallFrac"]
