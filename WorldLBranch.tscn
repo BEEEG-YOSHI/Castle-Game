@@ -113,4 +113,7 @@ light_energy = 0.8
 [node name="WallFrac" parent="." instance=ExtResource("1_kkgq8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.003, 0.25, 34.2896)
 
+[node name="Cube" parent="WallFrac" index="0"]
+visible = false
+
 [editable path="WallFrac"]
