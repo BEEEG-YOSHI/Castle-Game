@@ -128,7 +128,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.003, 0.25, 34.2896)
 visible = false
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.60776, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.47198, 0)
 script = ExtResource("2_dirlr")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
